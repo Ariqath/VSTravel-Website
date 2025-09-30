@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel Packages - VSTravel</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .error-message { color: red; font-size: 0.875rem; }
+  </style>
+</head>
+<body>
+
+  <header class="bg-gray-900 text-white p-4 flex justify-between items-center relative">
+    <div class="text-xl font-bold">VSTravel</div>
+    <nav>
+      <button id="hamburger" class="md:hidden text-3xl focus:outline-none" aria-label="Toggle menu">&#9776;</button>
+      <ul id="nav-menu" class="hidden md:flex space-x-4">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="destination.html" class="nav-link">Destination</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="travel.html" class="nav-link font-bold underline">Travel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <main>
+<section class="hero" style="background-image: url('Asset/Img/bannerTravel.jpg');">
+  <div class="hero-overlay"></div>
+  <div class="hero-text">
+    <h1>Travel Packages</h1>
+    <p>Choose from our curated travel packages tailored to give you the best experience in Indonesia.</p>
+  </div>
+</section>
+</main>
+
+
+<section class="mb-12 max-w-4xl mx-auto">
+  <h2 class="text-2xl font-bold mb-6 text-center">Why Book With VSTravel?</h2>
+  <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <li class="flex items-center gap-4">
+      <img src="Asset/Icon/check-circle.svg" alt="Check" class="h-7 w-7" />
+      <span class="text-gray-800 text-lg font-semibold">Best price guarantee</span>
+    </li>
+    <li class="flex items-center gap-4">
+      <img src="Asset/Icon/user-group.svg" alt="user-group" class="h-7 w-7">
+      <span class="text-gray-800 text-lg font-semibold">Professional guides</span>
+    </li>
+    <li class="flex items-center gap-4">
+     <img src="Asset/Icon/device-mobile.svg" alt="device-mobile" class="h-7 w-7">
+      <span class="text-gray-800 text-lg font-semibold">Easy online booking</span>
+    </li>
+    <li class="flex items-center gap-4">
+     <img src="Asset/Icon/calendar.svg" alt="calendar" class="h-7 w-7">
+      <span class="text-gray-800 text-lg font-semibold">Flexible schedules</span>
+    </li>
+    <li class="flex items-center gap-4">
+  <img src="Asset/Icon/phone.svg" alt="phone" class="h-7 w-7">
+      <span class="text-gray-800 text-lg font-semibold">24/7 Customer support</span>
+    </li>
+    <li class="flex items-center gap-4">
+  <img src="Asset/Icon/shield-check.svg" alt="Shield" class="h-7 w-7">
+      <span class="text-gray-800 text-lg font-semibold">Secure booking & payment</span>
+    </li>
+  </ul>
+</section>
+
+
+<main>
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" id="package-list">
+
+  <div class="bg-white rounded shadow p-6 flex flex-col hover:scale-105 transform transition duration-300">
+    <img src="Asset/Img/bali-destination.jpeg" alt="Bali Adventure" class="mb-4 rounded object-cover h-48 w-full" />
+    <h3 class="text-xl font-semibold mb-1">Bali Adventure</h3>
+    <p class="text-blue-600 font-semibold mb-2">IDR 5.500.000</p>
+    <p class="text-gray-600 flex-grow">Explore Bali's beautiful beaches, temples, and vibrant culture with our 5-day package.</p>
+    <button data-package="Bali Adventure" class="book-btn mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</button>
+  </div>
+
+  <div class="bg-white rounded shadow p-6 flex flex-col hover:scale-105 transform transition duration-300">
+    <img src="Asset/Img/yk-destination.jpeg" alt="Yogyakarta Heritage" class="mb-4 rounded object-cover h-48 w-full" />
+    <h3 class="text-xl font-semibold mb-1">Yogyakarta Heritage</h3>
+    <p class="text-blue-600 font-semibold mb-2">IDR 4.200.000</p>
+    <p class="text-gray-600 flex-grow">Discover ancient temples and rich Javanese culture in this 4-day immersive tour.</p>
+    <button data-package="Yogyakarta Heritage" class="book-btn mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</button>
+  </div>
+
+  <div class="bg-white rounded shadow p-6 flex flex-col hover:scale-105 transform transition duration-300">
+    <img src="Asset/Img/lombok-destination.jpeg" alt="Lombok Getaway" class="mb-4 rounded object-cover h-48 w-full" />
+    <h3 class="text-xl font-semibold mb-1">Lombok Getaway</h3>
+    <p class="text-blue-600 font-semibold mb-2">IDR 5.800.000</p>
+    <p class="text-gray-600 flex-grow">Experience pristine beaches and Mount Rinjani's majestic views in a 6-day trip.</p>
+    <button data-package="Lombok Getaway" class="book-btn mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</button>
+  </div>
+
+  <div class="bg-white rounded shadow p-6 flex flex-col hover:scale-105 transform transition duration-300">
+    <img src="Asset/Img/labuan-destination.jpeg" alt="Labuan Bajo Excursion" class="mb-4 rounded object-cover h-48 w-full" />
+    <h3 class="text-xl font-semibold mb-1">Labuan Bajo Excursion</h3>
+    <p class="text-blue-600 font-semibold mb-2">IDR 6.500.000</p>
+    <p class="text-gray-600 flex-grow">Gateway to Komodo National Park with island hopping and underwater adventures.</p>
+    <button data-package="Labuan Bajo Excursion" class="book-btn mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</button>
+  </div>
+
+  <div class="bg-white rounded shadow p-6 flex flex-col hover:scale-105 transform transition duration-300">
+    <img src="Asset/Img/malang-destination.jpeg" alt="Malang Explorer" class="mb-4 rounded object-cover h-48 w-full" />
+    <h3 class="text-xl font-semibold mb-1">Malang Explorer</h3>
+    <p class="text-blue-600 font-semibold mb-2">IDR 3.900.000</p>
+    <p class="text-gray-600 flex-grow">Enjoy the cool mountain air and stunning views of Mount Bromo in this 4-day adventure.</p>
+    <button data-package="Malang Explorer" class="book-btn mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</button>
+  </div>
+
+  <div class="bg-white rounded shadow p-6 flex flex-col hover:scale-105 transform transition duration-300">
+    <img src="Asset/Img/raja-destination.jpeg" alt="Raja Ampat Dive" class="mb-4 rounded object-cover h-48 w-full" />
+    <h3 class="text-xl font-semibold mb-1">Raja Ampat Dive</h3>
+    <p class="text-blue-600 font-semibold mb-2">IDR 8.200.000</p>
+    <p class="text-gray-600 flex-grow">Dive into vibrant coral reefs and pristine waters on this 5-day diving expedition.</p>
+    <button data-package="Raja Ampat Dive" class="book-btn mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</button>
+  </div>
+
+  <div class="bg-white rounded shadow p-6 flex flex-col hover:scale-105 transform transition duration-300">
+    <img src="Asset/Img/komodo-destination.jpeg" alt="Komodo Island Tour" class="mb-4 rounded object-cover h-48 w-full" />
+    <h3 class="text-xl font-semibold mb-1">Komodo Island Tour</h3>
+    <p class="text-blue-600 font-semibold mb-2">IDR 7.300.000</p>
+    <p class="text-gray-600 flex-grow">Meet the legendary Komodo dragons and explore this unique island's rugged beauty.</p>
+    <button data-package="Komodo Island Tour" class="book-btn mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</button>
+  </div>
+
+  <div class="bg-white rounded shadow p-6 flex flex-col hover:scale-105 transform transition duration-300">
+    <img src="Asset/Img/pink-destination.jpeg" alt="Pink Beach Relaxation" class="mb-4 rounded object-cover h-48 w-full" />
+    <h3 class="text-xl font-semibold mb-1">Pink Beach Relaxation</h3>
+    <p class="text-blue-600 font-semibold mb-2">IDR 4.700.000</p>
+    <p class="text-gray-600 flex-grow">Relax on the famous rosy-hued sands and enjoy the vibrant marine life.</p>
+    <button data-package="Pink Beach Relaxation" class="book-btn mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</button>
+  </div>
+
+  <div class="bg-white rounded shadow p-6 flex flex-col hover:scale-105 transform transition duration-300">
+    <img src="Asset/Img/toba-destination.jpeg" alt="Lake Toba Retreat" class="mb-4 rounded object-cover h-48 w-full" />
+    <h3 class="text-xl font-semibold mb-1">Lake Toba Retreat</h3>
+    <p class="text-blue-600 font-semibold mb-2">IDR 4.300.000</p>
+    <p class="text-gray-600 flex-grow">Experience tranquility at the world's largest volcanic lake with rich culture.</p>
+    <button data-package="Lake Toba Retreat" class="book-btn mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Now</button>
+  </div>
+
+</section>
+
+    </main>
+
+    <section id="booking-section" class="hidden max-w-2xl mx-auto bg-white p-6 rounded shadow">
+      <h2 class="text-xl font-semibold mb-6">Book Your Package: <span id="selected-package-name"></span></h2>
+      <form id="booking-form" novalidate>
+        <label for="fullname" class="block mb-1">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" class="w-full p-2 border rounded" />
+        <div id="nameError" class="error-message mb-2"></div>
+
+        <label for="phone" class="block mb-1">Phone Number:</label>
+        <input type="text" id="phone" name="phone" class="w-full p-2 border rounded" />
+        <div id="phoneError" class="error-message mb-2"></div>
+
+        <label for="participants" class="block mb-1">Total Participants:</label>
+        <input type="number" id="participants" name="participants" class="w-full p-2 border rounded" min="1" />
+        <div id="participantsError" class="error-message mb-2"></div>
+
+        <label for="departDate" class="block mb-1">Departure Date:</label>
+        <input type="date" id="departDate" name="departDate" class="w-full p-2 border rounded" />
+        <div id="departDateError" class="error-message mb-2"></div>
+
+        <label for="returnDate" class="block mb-1">Return Date:</label>
+        <input type="date" id="returnDate" name="returnDate" class="w-full p-2 border rounded" />
+        <div id="returnDateError" class="error-message mb-2"></div>
+
+        <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Submit Booking</button>
+      </form>
+    </section>
+  </main>
+
+<footer>
+  <p>© 2025 VSTravel. All rights reserved.</p>
+  <p>Contact us: <a href="mailto:info@vstravel.id" class="underline">info@vstravel.id</a> | +62 812 3456 7890</p>
+  <p>Jl. Gadjah Mada No.1, Jakarta, Indonesia</p>
+  <p>Follow us on <a href="#" class="underline">Facebook</a>, <a href="#" class="underline">Instagram</a>, <a href="#" class="underline">Twitter</a></p>
+  <p><a href="#" class="underline">Privacy Policy</a> | <a href="#" class="underline">Terms of Service</a></p>
+</footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (hamburger && navMenu) {
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+        navMenu.classList.toggle('flex');
+        navMenu.classList.toggle('flex-col');
+        navMenu.classList.toggle('space-y-4');
+        navMenu.classList.toggle('mt-4');
+        navMenu.classList.toggle('bg-gray-900');
+        navMenu.classList.toggle('p-4');
+        navMenu.classList.toggle('rounded-lg');
+        navMenu.classList.toggle('absolute');
+        navMenu.classList.toggle('right-4');
+        navMenu.classList.toggle('top-16');
+        navMenu.classList.toggle('w-48');
+        navMenu.classList.toggle('shadow-lg');
+        navMenu.classList.toggle('z-20');
+      });
+
+      document.querySelectorAll('#nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (!navMenu.classList.contains('hidden')) {
+            hamburger.click();
+          }
+        });
+      });
+    }
+
+    // Kode validasi booking form
+    const bookingSection = document.getElementById('booking-section');
+    const selectedPackageName = document.getElementById('selected-package-name');
+    const bookingForm = document.getElementById('booking-form');
+
+    document.querySelectorAll('.book-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const packageName = button.getAttribute('data-package');
+        selectedPackageName.textContent = packageName;
+        bookingSection.classList.remove('hidden');
+        bookingForm.scrollIntoView({behavior: 'smooth'});
+      });
+    });
+
+    bookingForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // clear errors
+      ['nameError', 'phoneError', 'participantsError', 'departDateError', 'returnDateError'].forEach(id => {
+        const el = document.getElementById(id);
+        if(el) el.textContent = '';
+      });
+
+      let valid = true;
+
+      // validation: full Name
+      const name = bookingForm.fullname.value.trim();
+      if (name.length < 3) {
+        document.getElementById('nameError').textContent = 'Please enter your full name (min 3 characters).';
+        valid = false;
+      }
+
+      // validation: phone Number
+      const phone = bookingForm.phone.value.trim();
+      if (phone.length < 10 || [...phone].some(c => isNaN(parseInt(c)))) {
+        document.getElementById('phoneError').textContent = 'Please enter a valid phone number with at least 10 digits.';
+        valid = false;
+      }
+
+      // validation: total participants
+      const participants = parseInt(bookingForm.participants.value);
+      if (isNaN(participants) || participants < 1) {
+        document.getElementById('participantsError').textContent = 'Total participants must be at least 1.';
+        valid = false;
+      }
+
+      // validation: departure date
+      const departDateValue = bookingForm.departDate.value;
+      const departDate = new Date(departDateValue);
+      const today = new Date();
+      today.setHours(0,0,0,0);
+      if (!departDateValue || departDate < today) {
+        document.getElementById('departDateError').textContent = 'Departure date must be today or later.';
+        valid = false;
+      }
+
+      // validation: return date
+      const returnDateValue = bookingForm.returnDate.value;
+      const returnDate = new Date(returnDateValue);
+      if (!returnDateValue || returnDate <= departDate) {
+        document.getElementById('returnDateError').textContent = 'Return date must be after departure date.';
+        valid = false;
+      }
+
+      if (valid) {
+        alert(`Booking for "${selectedPackageName.textContent}" submitted successfully!`);
+        bookingForm.reset();
+        bookingSection.classList.add('hidden');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

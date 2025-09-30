@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - VSTravel</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <div class="text-xl font-bold">VSTravel</div>
+    <nav>
+      <button id="hamburger" class="md:hidden text-3xl focus:outline-none" aria-label="Toggle menu">&#9776;</button>
+      <ul id="nav-menu" class="hidden md:flex space-x-4">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="destination.html" class="nav-link">Destination</a></li>
+        <li><a href="contact.html" class="nav-link font-bold underline">Contact</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="travel.html" class="nav-link">Travel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-8">
+    <section class="hero relative rounded-lg overflow-hidden mb-8" style="background-image: url('Asset/Img/banner-contact.jpeg'); height: 280px;">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="relative z-10 flex flex-col justify-center items-center h-full text-white text-center px-4">
+        <h1 class="text-4xl font-bold mb-2">Contact Us</h1>
+        <p class="text-lg max-w-xl">We're here to help you explore the world with ease.</p>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Jakarta Office -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center">
+        <img src="Asset/Img/jkt-office.jpg" alt="Map of Jakarta Office" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <h2 class="text-xl font-semibold mb-2">Jakarta Office</h2>
+        <p>Jl. Thamrin No. 1, Jakarta</p>
+        <p>Mon - Sat, 09.00 - 18.00</p>
+        <p>Phone: +62 812 3456 7890</p>
+      </div>
+
+      <!-- Medan Office -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center">
+        <img src="Asset/Img/medan-office.jpg" alt="Map of Medan Office" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <h2 class="text-xl font-semibold mb-2">Medan Office</h2>
+        <p>Jl. Gatot Subroto No. 88, Medan</p>
+        <p>Mon - Sat, 09.00 - 17.00</p>
+        <p>Phone: +62 812 1234 5678</p>
+      </div>
+
+      <!-- Surabaya Office -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center">
+        <img src="Asset/Img/sby-office.jpg" alt="Map of Surabaya Office" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <h2 class="text-xl font-semibold mb-2">Surabaya Office</h2>
+        <p>Jl. Pemuda No. 25, Surabaya</p>
+        <p>Mon - Sat, 09.00 - 17.00</p>
+        <p>Phone: +62 812 8765 4321</p>
+      </div>
+
+      <!-- Head Office -->
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center">
+        <img src="Asset/Img/head-office.jpg" alt="Map of Head Office" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <h2 class="text-xl font-semibold mb-2">Head Office</h2>
+        <p>Jl. Gadjah Mada No. 1, Jakarta Selatan</p>
+        <p>Mon - Fri, 08.30 - 17.30</p>
+        <p>Email: info@vstravel.id</p>
+      </div>
+    </section>
+  </main>
+
+<footer>
+  <p>© 2025 VSTravel. All rights reserved.</p>
+  <p>Contact us: <a href="mailto:info@vstravel.id" class="underline">info@vstravel.id</a> | +62 812 3456 7890</p>
+  <p>Jl. Gadjah Mada No.1, Jakarta, Indonesia</p>
+  <p>Follow us on <a href="#" class="underline">Facebook</a>, <a href="#" class="underline">Instagram</a>, <a href="#" class="underline">Twitter</a></p>
+  <p><a href="#" class="underline">Privacy Policy</a> | <a href="#" class="underline">Terms of Service</a></p>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+      navMenu.classList.toggle('flex');
+      navMenu.classList.toggle('flex-col');
+      navMenu.classList.toggle('space-y-4');
+      navMenu.classList.toggle('mt-4');
+      navMenu.classList.toggle('bg-gray-900');
+      navMenu.classList.toggle('p-4');
+      navMenu.classList.toggle('rounded-lg');
+      navMenu.classList.toggle('absolute');
+      navMenu.classList.toggle('right-4');
+      navMenu.classList.toggle('top-16');
+      navMenu.classList.toggle('w-48');
+      navMenu.classList.toggle('shadow-lg');
+      navMenu.classList.toggle('z-20');
+    });
+    document.querySelectorAll('#nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (!navMenu.classList.contains('hidden')) {
+          hamburger.click();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

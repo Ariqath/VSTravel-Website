@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations - VSTravel</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+  <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <div class="text-xl font-bold">VSTravel</div>
+    <nav>
+      <button id="hamburger" class="md:hidden text-3xl focus:outline-none" aria-label="Toggle menu">&#9776;</button>
+      <ul id="nav-menu" class="hidden md:flex space-x-4">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="destination.html" class="nav-link font-bold underline">Destination</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="travel.html" class="nav-link">Travel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="flex-grow">
+    <section class="hero" style="background-image: url('Asset/Img/banner-destination.jpeg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <h1>Our Destinations</h1>
+        <p>Explore Indonesia's most beautiful places</p>
+      </div>
+    </section>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded shadow p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:scale-105 duration-300">
+        <img src="Asset/Img/bali-destination.jpeg" alt="Bali" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <div class="content">
+          <h3 class="text-lg font-semibold mb-2">Bali, Bali Province</h3>
+          <p class="text-gray-600 mb-4">Beautiful beaches, rich culture, and vibrant nightlife await you on the Island of the Gods.</p>
+          <a href="travel.html" class="inline-block bg-gray-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">See details</a>
+        </div>
+      </div>
+      <div class="bg-white rounded shadow p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:scale-105 duration-300">
+        <img src="Asset/Img/yk-destination.jpeg" alt="Yogyakarta" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <div class="content">
+          <h3 class="text-lg font-semibold mb-2">Yogyakarta, Special Region</h3>
+          <p class="text-gray-600 mb-4">Known for Borobudur and Prambanan temples, Yogyakarta blends tradition, history, and hospitality.</p>
+          <a href="travel.html" class="inline-block bg-gray-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">See details</a>
+        </div>
+      </div>
+      <div class="bg-white rounded shadow p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:scale-105 duration-300">
+        <img src="Asset/Img/lombok-destination.jpeg" alt="Lombok" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <div class="content">
+          <h3 class="text-lg font-semibold mb-2">Lombok, West Nusa Tenggara</h3>
+          <p class="text-gray-600 mb-4">A hidden gem offering breathtaking beaches, Mount Rinjani, and tranquil island vibes.</p>
+          <a href="travel.html" class="inline-block bg-gray-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">See details</a>
+        </div>
+      </div>
+      <div class="bg-white rounded shadow p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:scale-105 duration-300">
+        <img src="Asset/Img/labuan-destination.jpeg" alt="Labuan Bajo" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <div class="content">
+          <h3 class="text-lg font-semibold mb-2">Labuan Bajo, East Nusa Tenggara</h3>
+          <p class="text-gray-600 mb-4">Gateway to Komodo National Park, offering stunning seascapes and island adventures.</p>
+          <a href="travel.html" class="inline-block bg-gray-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">See details</a>
+        </div>
+      </div>
+      <div class="bg-white rounded shadow p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:scale-105 duration-300">
+        <img src="Asset/Img/malang-destination.jpeg" alt="Malang" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <div class="content">
+          <h3 class="text-lg font-semibold mb-2">Malang, East Java</h3>
+          <p class="text-gray-600 mb-4">Enjoy the stunning views of Mount Bromo and the cool mountain air in this beautiful city.</p>
+          <a href="travel.html" class="inline-block bg-gray-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">See details</a>
+        </div>
+      </div>
+      <div class="bg-white rounded shadow p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:scale-105 duration-300">
+        <img src="Asset/Img/raja-destination.jpeg" alt="Raja Ampat" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <div class="content">
+          <h3 class="text-lg font-semibold mb-2">Raja Ampat, West Papua</h3>
+          <p class="text-gray-600 mb-4">Dive into pristine waters and discover vibrant coral reefs in one of Indonesia’s best diving spots.</p>
+          <a href="travel.html" class="inline-block bg-gray-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">See details</a>
+        </div>
+      </div>
+      <div class="bg-white rounded shadow p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:scale-105 duration-300">
+        <img src="Asset/Img/komodo-destination.jpeg" alt="Komodo Island" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <div class="content">
+          <h3 class="text-lg font-semibold mb-2">Komodo Island, East Nusa Tenggara</h3>
+          <p class="text-gray-600 mb-4">Meet the legendary Komodo dragons and explore the rugged landscapes of this exotic island.</p>
+          <a href="travel.html" class="inline-block bg-gray-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">See details</a>
+        </div>
+      </div>
+      <div class="bg-white rounded shadow p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:scale-105 duration-300">
+        <img src="Asset/Img/pink-destination.jpeg" alt="Pink Beach" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <div class="content">
+          <h3 class="text-lg font-semibold mb-2">Pink Beach, East Nusa Tenggara</h3>
+          <p class="text-gray-600 mb-4">Famous for its rosy-hued sand, this beach offers a breathtaking mix of colors and marine biodiversity.</p>
+          <a href="travel.html" class="inline-block bg-gray-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">See details</a>
+        </div>
+      </div>
+      <div class="bg-white rounded shadow p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-lg hover:scale-105 duration-300">
+        <img src="Asset/Img/toba-destination.jpeg" alt="Lake Toba" class="rounded-md mb-4 w-full h-48 object-cover" />
+        <div class="content">
+          <h3 class="text-lg font-semibold mb-2">Lake Toba, North Sumatra</h3>
+          <p class="text-gray-600 mb-4">The largest volcanic lake in the world, offering stunning views, rich Batak culture, and natural tranquility.</p>
+          <a href="travel.html" class="inline-block bg-gray-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">See details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+<footer>
+  <p>© 2025 VSTravel. All rights reserved.</p>
+  <p>Contact us: <a href="mailto:info@vstravel.id" class="underline">info@vstravel.id</a> | +62 812 3456 7890</p>
+  <p>Jl. Gadjah Mada No.1, Jakarta, Indonesia</p>
+  <p>Follow us on <a href="#" class="underline">Facebook</a>, <a href="#" class="underline">Instagram</a>, <a href="#" class="underline">Twitter</a></p>
+  <p><a href="#" class="underline">Privacy Policy</a> | <a href="#" class="underline">Terms of Service</a></p>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+      navMenu.classList.toggle('flex');
+      navMenu.classList.toggle('flex-col');
+      navMenu.classList.toggle('space-y-4');
+      navMenu.classList.toggle('mt-4');
+      navMenu.classList.toggle('bg-gray-900');
+      navMenu.classList.toggle('p-4');
+      navMenu.classList.toggle('rounded-lg');
+      navMenu.classList.toggle('absolute');
+      navMenu.classList.toggle('right-4');
+      navMenu.classList.toggle('top-16');
+      navMenu.classList.toggle('w-48');
+      navMenu.classList.toggle('shadow-lg');
+      navMenu.classList.toggle('z-20');
+    });
+    document.querySelectorAll('#nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (!navMenu.classList.contains('hidden')) {
+          hamburger.click();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

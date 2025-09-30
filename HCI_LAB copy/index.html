@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VSTravel - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
+    <div class="text-xl font-bold">VSTravel</div>
+    <nav>
+      <button id="hamburger" class="md:hidden text-3xl focus:outline-none" aria-label="Toggle menu">&#9776;</button>
+      <ul id="nav-menu" class="hidden md:flex space-x-4">
+        <li><a href="index.html" class="nav-link font-bold underline">Home</a></li>
+        <li><a href="destination.html" class="nav-link">Destination</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="travel.html" class="nav-link">Travel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="bg-white-100 text-center py-16">
+      <h1 class="text-4xl font-bold">Explore the World with VSTravel</h1>
+      <p class="text-gray-500 mt-2">Your journey begins here.</p>
+      <div class="mt-6 space-x-4">
+        <a href="destination.html">
+          <button class="px-4 py-2 bg-black text-white rounded">See More</button>
+        </a>
+      </div>
+    </section>
+
+      <section class="relative h-80">
+        <img src="Asset/Img/banner-index.jpeg" alt="Travel Banner" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+          <h2 class="text-white text-2xl md:text-3xl font-semibold">Your journey is just one click away!</h2>
+        </div>
+      </section>
+
+<!-- top destination -->
+      <section class="py-20 px-6 bg-gradient-to-b from-white to-gray-100">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl font-bold text-gray-800 tracking-wide">Top Destinations</h2>
+          <p class="text-gray-600 mt-2 text-lg">Explore the most visited places this month</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform">
+            <img src="Asset/Img/bali-index.jpeg" alt="Bali" class="w-full h-48 object-cover" />
+            <div class="p-4 text-center text-lg font-semibold">Bali</div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform">
+            <img src="Asset/Img/yk-index.jpeg" alt="Yogyakarta" class="w-full h-48 object-cover" />
+            <div class="p-4 text-center text-lg font-semibold">Yogyakarta</div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform">
+            <img src="Asset/Img/lombok-index.jpeg" alt="Lombok" class="w-full h-48 object-cover" />
+            <div class="p-4 text-center text-lg font-semibold">Lombok</div>
+          </div>
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform">
+            <img src="Asset/Img/labuan-index.jpeg" alt="Labuan Bajo" class="w-full h-48 object-cover" />
+            <div class="p-4 text-center text-lg font-semibold">Labuan Bajo</div>
+          </div>
+        </div>
+      </section>
+
+<!-- testi -->
+      <section class="py-20 px-6 bg-white">
+        <div class="text-center mb-14">
+          <h2 class="text-3xl font-bold text-gray-800 tracking-wide">Why People Love Us</h2>
+          <p class="text-gray-600 mt-2 text-lg">Hear what our travelers have to say</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300">
+            <p class="italic text-gray-700">“Amazing service and unforgettable experience!”</p>
+            <div class="mt-6 flex items-center justify-center gap-3">
+              <img class="w-10 h-10 rounded-full" src="Asset/Img/andi-index.jpeg" alt="Andi" />
+              <div>
+                <p class="text-base font-bold text-gray-800">Andi</p>
+                <p class="text-sm text-gray-500">Traveler</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300">
+            <p class="italic text-gray-700">“Highly recommended for family trips!”</p>
+            <div class="mt-6 flex items-center justify-center gap-3">
+              <img class="w-10 h-10 rounded-full" src="Asset/Img/siti-index.jpeg" alt="Siti" />
+              <div>
+                <p class="text-base font-bold text-gray-800">Siti</p>
+                <p class="text-sm text-gray-500">Businesswoman</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300">
+            <p class="italic text-gray-700">“Friendly guides and easy booking!”</p>
+            <div class="mt-6 flex items-center justify-center gap-3">
+              <img class="w-10 h-10 rounded-full" src="Asset/Img/budi-index.jpeg" alt="Budi" />
+              <div>
+                <p class="text-base font-bold text-gray-800">Budi</p>
+                <p class="text-sm text-gray-500">Photographer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+
+<footer>
+  <p>© 2025 VSTravel. All rights reserved.</p>
+  <p>Contact us: <a href="mailto:info@vstravel.id" class="underline">info@vstravel.id</a> | +62 812 3456 7890</p>
+  <p>Jl. Gadjah Mada No.1, Jakarta, Indonesia</p>
+  <p>Follow us on <a href="#" class="underline">Facebook</a>, <a href="#" class="underline">Instagram</a>, <a href="#" class="underline">Twitter</a></p>
+  <p><a href="#" class="underline">Privacy Policy</a> | <a href="#" class="underline">Terms of Service</a></p>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('hidden');
+      navMenu.classList.toggle('flex');
+      navMenu.classList.toggle('flex-col');
+      navMenu.classList.toggle('space-y-4');
+      navMenu.classList.toggle('mt-4');
+      navMenu.classList.toggle('bg-gray-900');
+      navMenu.classList.toggle('p-4');
+      navMenu.classList.toggle('rounded-lg');
+      navMenu.classList.toggle('absolute');
+      navMenu.classList.toggle('right-4');
+      navMenu.classList.toggle('top-16');
+      navMenu.classList.toggle('w-48');
+      navMenu.classList.toggle('shadow-lg');
+      navMenu.classList.toggle('z-20');
+    });
+    document.querySelectorAll('#nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (!navMenu.classList.contains('hidden')) {
+          hamburger.click();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
